@@ -12,7 +12,7 @@ app.get("/",async(req,res)=>{
 })
 app.use("/users",userRouter)
 
-app.get("/random",async(req,res)=>{
+app.get("/randomword",async(req,res)=>{
     // res.send(randomWords)
     let randomWord = randomWords(1)
     res.send(randomWord)
