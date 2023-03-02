@@ -8,7 +8,7 @@ var randomWords = require('random-words');
 const {UserModel} = require("./models/users.model")
 const {userRouter}= require("./routes/user.routes")
 app.get("/",async(req,res)=>{
- res.send("wecome , use /random to get random WORDS AND /USERS TO GET DATA OF USERS")
+ res.send("wecome , use /randomword to get random WORDS AND /USERS TO GET DATA OF USERS")
 })
 app.use("/users",userRouter)
 
