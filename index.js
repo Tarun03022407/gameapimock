@@ -7,13 +7,9 @@ var randomWords = require('random-words');
 // app.get("/",)
 const {UserModel} = require("./models/users.model")
 const {userRouter}= require("./routes/user.routes")
-// app.get("/users",async(req,res)=>{
-//     try {
-//         let data 
-//     } catch (error) {
-        
-//     }
-// })
+app.get("/",async(req,res)=>{
+ res.send("wecome , use /random to get random WORDS AND /USERS TO GET DATA OF USERS")
+})
 app.use("/users",userRouter)
 
 app.get("/random",async(req,res)=>{
